@@ -2,13 +2,13 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MyWpfCanvasGrid.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="Colums" Type="System.Int32" Scope="User">
+    <Setting Name="Columns" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">10</Value>
     </Setting>
     <Setting Name="Rows" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">10</Value>
     </Setting>
-    <Setting Name="ColumXS" Type="System.Double" Scope="User">
+    <Setting Name="ColumnXS" Type="System.Double" Scope="User">
       <Value Profile="(Default)">13</Value>
     </Setting>
     <Setting Name="RowYS" Type="System.Double" Scope="User">

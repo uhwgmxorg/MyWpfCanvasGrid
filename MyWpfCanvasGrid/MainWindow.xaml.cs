@@ -52,7 +52,7 @@ namespace MyWpfCanvasGrid
             var p = Properties.Settings.Default;
 
             // Output and debugging
-            string mes = String.Format("#1 StaticGrid={0} Columns={1} Rows={2} ColumXS={3} RowYS={4}", p.StaticGrid, p.Colums, p.Rows, p.ColumXS, p.RowYS);
+            string mes = String.Format("#1 StaticGrid={0} Columns={1} Rows={2} ColumXS={3} RowYS={4}", p.StaticGrid, p.Columns, p.Rows, p.ColumnXS, p.RowYS);
             Debug.WriteLine(mes);
             mes = String.Format("#1 MyCanvas.ActualWidth={0} MyCanvas.ActualHeight={1}", MyCanvas.ActualWidth,MyCanvas.ActualHeight);
             Debug.WriteLine(mes);
@@ -155,12 +155,12 @@ namespace MyWpfCanvasGrid
 
             if (p.StaticGrid)
             {
-                p.Colums = (int)Math.Round(MyGrid.ActualWidth / p.ColumXS);
+                p.Columns = (int)Math.Round(MyGrid.ActualWidth / p.ColumnXS);
                 p.Rows = (int)Math.Round(MyGrid.ActualHeight / p.RowYS);
             }
             else
             {
-                p.ColumXS = MyGrid.ActualWidth / p.Colums;
+                p.ColumnXS = MyGrid.ActualWidth / p.Columns;
                 p.RowYS = MyGrid.ActualHeight / p.Rows;
             }
         }

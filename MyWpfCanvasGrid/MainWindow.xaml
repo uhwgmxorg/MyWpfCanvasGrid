@@ -13,7 +13,7 @@
     </Window.Resources>
     <Grid>
         <Grid Name="MyGrid" Margin="10,10,95,10" SizeChanged="MyGrid_SizeChanged">
-            <local:UCGrid x:Name="LineGrid" Columns="{Binding Colums, Source={x:Static p:Settings.Default}}" Rows="{Binding Rows, Source={x:Static p:Settings.Default}}" LineThickness="0.5" LineBrush="LightGray" />
+            <local:UCGrid x:Name="LineGrid" Columns="{Binding Columns, Source={x:Static p:Settings.Default}}" Rows="{Binding Rows, Source={x:Static p:Settings.Default}}" LineThickness="0.5" LineBrush="LightGray" />
             <Canvas Name="MyCanvas">
             </Canvas>
         </Grid>
@@ -26,14 +26,14 @@
         <Grid Margin="0,0,11,162.96" HorizontalAlignment="Right" Width="79" Height="127" VerticalAlignment="Bottom">
             <CheckBox Content="Static Grid" IsChecked="{Binding StaticGrid, Source={x:Static p:Settings.Default}}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="80"/>
             <Label Content="ColumXS" HorizontalAlignment="Left" Margin="0,23,0,0" VerticalAlignment="Top"/>
-            <TextBox Text="{Binding ColumXS, Source={x:Static p:Settings.Default}}" IsEnabled="{Binding StaticGrid, Source={x:Static p:Settings.Default}}" HorizontalAlignment="Left" Height="22" Margin="0,49,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="79" LostFocus="TextBox_LostFocus_XS"/>
+            <TextBox Text="{Binding ColumnXS, Source={x:Static p:Settings.Default}}" IsEnabled="{Binding StaticGrid, Source={x:Static p:Settings.Default}}" HorizontalAlignment="Left" Height="22" Margin="0,49,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="79" LostFocus="TextBox_LostFocus_XS"/>
             <Label Content="RowYS" HorizontalAlignment="Left" Margin="0,76,0,0" VerticalAlignment="Top"/>
             <TextBox Text="{Binding RowYS, Source={x:Static p:Settings.Default}}" IsEnabled="{Binding StaticGrid, Source={x:Static p:Settings.Default}}" HorizontalAlignment="Left" Height="22" Margin="0,102,0,0" TextWrapping="NoWrap" VerticalAlignment="Top" Width="79" LostFocus="TextBox_LostFocus_YS"/>
         </Grid>
         <Grid Margin="0,0,10,59.96" Height="98" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="80">
             <Label Content="Colums" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Label Content="{Binding Value, ElementName=SVColums}" HorizontalAlignment="Left" Margin="46,0,0,0" VerticalAlignment="Top" Width="30"/>
-            <Slider Name="SVColums" Value="{Binding Colums, Source={x:Static p:Settings.Default}}" IsEnabled="{Binding StaticGrid, Source={x:Static p:Settings.Default}, Converter={StaticResource InverseBooleanConverter}}" Minimum="1" Maximum="100" SmallChange = "1" HorizontalAlignment="Left" Margin="-4,26,0,0" VerticalAlignment="Top" Width="80" ValueChanged="Slider_ValueChanged"/>
+            <Slider Name="SVColums" Value="{Binding Columns, Source={x:Static p:Settings.Default}}" IsEnabled="{Binding StaticGrid, Source={x:Static p:Settings.Default}, Converter={StaticResource InverseBooleanConverter}}" Minimum="1" Maximum="100" SmallChange = "1" HorizontalAlignment="Left" Margin="-4,26,0,0" VerticalAlignment="Top" Width="80" ValueChanged="Slider_ValueChanged"/>
             <Label Content="Rows" HorizontalAlignment="Left" Margin="0,50,0,0" VerticalAlignment="Top"/>
             <Label Content="{Binding Value, ElementName=SVRows}" HorizontalAlignment="Left" Margin="46,50,0,0" VerticalAlignment="Top" Width="30"/>
             <Slider Name="SVRows" Value="{Binding Rows, Source={x:Static p:Settings.Default}}" IsEnabled="{Binding StaticGrid, Source={x:Static p:Settings.Default}, Converter={StaticResource InverseBooleanConverter}}" Minimum="1" Maximum="100" SmallChange = "1" HorizontalAlignment="Left" Margin="-4,76,0,0" VerticalAlignment="Top" Width="80" ValueChanged="Slider_ValueChanged"/>

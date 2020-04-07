@@ -26,12 +26,12 @@ namespace MyWpfCanvasGrid.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("10")]
-        public int Colums {
+        public int Columns {
             get {
-                return ((int)(this["Colums"]));
+                return ((int)(this["Columns"]));
             }
             set {
-                this["Colums"] = value;
+                this["Columns"] = value;
             }
         }
         
@@ -50,12 +50,12 @@ namespace MyWpfCanvasGrid.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("13")]
-        public double ColumXS {
+        public double ColumnXS {
             get {
-                return ((double)(this["ColumXS"]));
+                return ((double)(this["ColumnXS"]));
             }
             set {
-                this["ColumXS"] = value;
+                this["ColumnXS"] = value;
             }
         }
         
